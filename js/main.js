@@ -1,4 +1,4 @@
-alert("Bienvenido a la mejor tienda de teclados");
+swal.fire("Bienvenido a la mejor tienda de teclados");
 
 function ingreseNombre() {
   let nameEmpty = prompt("Ingresa tu nombre o apodo");
@@ -51,7 +51,7 @@ function elegirTeclado() {
   // Verificar si localStorage está disponible
   if (typeof localStorage !== "undefined") {
     // Almacenar el nombre del teclado elegido
-    localStorage.setItem("tecladoElegido", nombreTeclado);
+    localStorage.setItem("tecladoElegido", nombreTeclado, );
   } else {
     // Mostrar un mensaje de error al usuario
     alert("Tu navegador no soporta almacenamiento local");
